@@ -60,6 +60,7 @@ li{
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	background-color: #f6f6ea;
 }
 
 .main{
@@ -102,7 +103,6 @@ li{
 	left: 0;
 	z-index: 50;
 }
-
 .header__container {
 	display: flex;
 	align-items: center;
@@ -112,30 +112,25 @@ li{
 	position: absolute;
 	z-index: 5;
 }
-
 .header__menu {
 	flex: 1 1 auto;
 }
-
 .header__button{
 	align-items: center;
 	display: flex;
 	flex: 0 0 50px;
 	padding: 14px 30px;
 }
-
 .menu {
 	display: flex;
 	justify-content: flex-end;
 }
-
 .menu__list {
 	display: flex;
 }
 .menu__item {
 	margin: 0px 20px 0px 0px;
 }
-
 .menu__link {
 	font-family: Cairo;
 	text-transform: uppercase;
@@ -144,7 +139,6 @@ li{
 	letter-spacing: 2px;
 	transition: all 0.3s ease 0s;
 }
-
 .menu__link:hover{
 	color: #219c9c;
 	font-weight: 500;
@@ -197,7 +191,6 @@ li{
 		font-size: 20px;
 		}
 }
-
 
 /*------------------- burger-------------- */
 
@@ -267,20 +260,43 @@ li{
 
 /*--------------- MAIN ----------------------------*/
 
-.banner__container{
+.banner{
 	width: 100%;
 	display: flex;
 }
 
-/* mobile */
-@media (max-width:767.98px){
-	.banner__container{
-		width: 100%;
+@media (max-width:424.98px){
+	.banner{
+		display: none;
 	}
 }
 
-@media (max-width:424.98px){
-	.banner__container{
-		display: none;
-	}
+.design {
+	padding: 10px 0px 20px 0px;
+}
+.design__container {
+	display: flex;
+}
+.design__content {
+	flex: 0 1 55%;
+	margin: 0px 50px 0px 0px;
+	display: flex;
+}
+.design__block {
+	
+}
+
+
+.block {
+	align-items: center;
+}
+.block__list {
+	
+}
+.block__item {
+	
+}
+.design__image {
+	flex: 0 1 45%;
+	max-width: 100%;
 }
