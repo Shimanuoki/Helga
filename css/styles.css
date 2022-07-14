@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 /*------- Main presets -----------------------------------------------*/
 
 html, body{
-	/* min-width: 320px; */
+	min-width: 320px;
 	height: 100%;
 	@import url(https://fonts.googleapis.com/css?family=Cairo:300,regular,500,700,&display=swap);
 	font-size: 16px;
@@ -68,10 +68,11 @@ li{
 }
 
 [class*="__container"]{
-	max-width: 1170px;
+	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
 
 /*-------- Adaptiv------------------------------------------------------ */
 /* PC */
@@ -96,17 +97,19 @@ li{
 
 
 .header {
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 	background-color: #eee9e9;
-	top: 0;
+	/* top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 50; */
+	position: sticky;
+	top: 0px;
 }
 .header__container {
 	display: flex;
 	align-items: center;
-	min-height: 80px;
+	min-height: 60px;
 }
 .header__logo {
 	position: absolute;
@@ -262,14 +265,11 @@ li{
 
 .banner{
 	width: 100%;
+	max-width: 1440px;
 	/* flex-basis:auto; */
 }
 
-@media (max-width:424.98px){
-	.banner{
-		display: none;
-	}
-}
+
 
 /* ------------first block------------------------- */
 
@@ -299,6 +299,7 @@ li{
 .design__image img{
 	display: flex;
 	max-width: 100%;
+	border-radius: 25px;
 }
 
 .design__block {}
@@ -342,7 +343,11 @@ margin: 0px 0px 20px 0px;
 }
 
 /*------------- second block ----------------------------------*/
-
+.design {
+	padding: 30px 0px 20px 0px;
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+}
 .spec {
 	padding: 30px 0px 20px 0px;
 }
@@ -350,7 +355,14 @@ margin: 0px 0px 20px 0px;
 	display: flex;
 	align-items:flex-start;
 }
-.design__image {
+.spec__image{
+	display: flex;
+	flex: 0 1 40%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+}
+.spec__image img{
 	display: flex;
 	max-width: 100%;
 }
@@ -358,14 +370,47 @@ margin: 0px 0px 20px 0px;
 	flex: 0 1 60%;
 	padding: 0px 20px;
 }
-.spec__block {
-}
-.block {
-}
-.block__position {
-}
+/* -------------------------------------------- */
 
-/* mobile */
 @media (max-width:424.98px){
-
+	.banner{
+		margin: 0;
+		padding: 0;
+	}
+	.spec,
+	.design {
+		padding: 30px 0px 20px 0px;
+	}
+	.spec__container,
+	.design__container {
+		display: flex;
+		align-items:flex-start;
+		flex-direction:column;
+	}
+	.spec__content,
+	.design__content {
+		flex: 1 1 auto;
+		padding: 10px 5px;
+	}
+	.spec__image{
+		display: flex;
+		flex: 1 1 auto;
+		align-items: center;
+		justify-content: center;
+		order: 2;
+	}
+	/* .design__image img{
+		display: flex;
+		max-width: 100%;
+	} */
+	.spec__content{
+		order: 1;
+	}
+	.block{
+		margin: 0;
+		padding: 0;
+	}
+	.banner{
+		margin: 0px 15px;
+	}
 }
