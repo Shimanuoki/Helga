@@ -75,6 +75,7 @@ li{
 
 
 /*-------- Adaptiv------------------------------------------------------ */
+
 /* PC */
 @media (max-width:1440px){
 	[class*="__container"]{
@@ -103,12 +104,8 @@ li{
 
 
 .header {
-	/* position: absolute; */
 	width: 100%;
 	background-color: #eee9e9;
-	/* top: 0;
-	left: 0;
-	z-index: 50; */
 	position: sticky;
 	top: 0px;
 }
@@ -272,7 +269,6 @@ li{
 .banner{
 	width: 100%;
 	max-width: 1440px;
-	/* flex-basis:auto; */
 }
 
 
@@ -281,13 +277,9 @@ li{
 
 .design {
 	padding: 30px 0px 20px 0px;
-	/* justify-content: space-between; */
-	/* justify-content: space-around; */
-
 }
 .design__container {
 	display: flex;
-	/* justify-content: space-around; */
 	align-items:flex-start;
 	
 }
@@ -351,8 +343,6 @@ margin: 0px 0px 20px 0px;
 /*------------- second block ----------------------------------*/
 .design {
 	padding: 30px 0px 20px 0px;
-	/* justify-content: space-between; */
-	/* justify-content: space-around; */
 }
 .spec {
 	padding: 30px 0px 20px 0px;
@@ -405,10 +395,6 @@ margin: 0px 0px 20px 0px;
 		justify-content: center;
 		order: 2;
 	}
-	/* .design__image img{
-		display: flex;
-		max-width: 100%;
-	} */
 	.spec__content{
 		order: 1;
 	}
@@ -419,4 +405,45 @@ margin: 0px 0px 20px 0px;
 	.banner{
 		margin: 0px 15px;
 	}
+}
+
+
+/* ----Footer--------------------------------------------------- */
+.footer{
+	width: 100%;
+	background-color: #eee9e9;
+}
+
+.footer__container{
+	display: flex;
+	align-items: center;
+	min-height: 60px;
+}
+.footer__menu{
+	display: flex;
+	gap: 100px;
+	font-size: 14px;
+	flex: 1 1 auto;
+}
+.footer__list{
+	display: flex;
+	flex-direction: column;
+}
+.footer__mail::before{
+content: url(/img/mail_ico.svg);
+padding: 5px 3px;
+}
+.footer__tel::before{
+	content: url(/img/phone_ico.svg);
+	padding: 5px 3px;
+}
+
+	.footer__tel{
+	color: rgb(22, 144, 163);
+	}
+
+.footer__copyright{
+	font-size: 10px;
+	display: flex;
+	margin: 60px 0px 0px 0px;
 }
