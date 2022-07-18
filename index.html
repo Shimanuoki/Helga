@@ -11,87 +11,116 @@
 	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	 <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	 <link rel="stylesheet" href="/css/styles.css">
+	 <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+	 <link rel="stylesheet" href="/css/style.css">
     <title>Design</title>
   </head>
   <body>
-	<div class="wrapper">
-		<header id="open" class="header">
-			<div id="close" class="header__container">
-				<a class="header__logo" href=""><img src="/img/source/logo.png" alt="Logo"></a>
-				<div class="header__menu menu">
-					<nav id="menu" class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="index.html" class="menu__link">На главную</a>
-							</li>
-							<li class="menu__item">
-								<a href="gallery.html" class="menu__link">Портфолио</a>
-							</li>
-							<li class="menu__item">
-								<a href="about.html" class="menu__link">Обо мне</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__button">
-						<a href="#open" class="icon-menu"><span></span></a>
-						<a href="#close" class="close-icon-menu"></a>
-					</div>					
-				</div>
-			</div>
-		</header>
-		<main class="main">
-			<div class="banner__content"><img src="/img/source/banner.jpg" alt="banner"></div>
-			<section class="design">
-			<div class="design__container">
-				<div class="design__content">
-					<div class="design__block block">
-						<div class="block__title">Полный комплект дизайн проекта включает в себя:</div>
-						<div class="block__position">комплект чертежей формата А4:</div>
-						<ul class="block__list">
-							<li class="block__item">обмеры с площадями;</li>
-							<li class="block__item">план с расстановкой мебели;</li>
-							<li class="block__item">план перепланировки;</li>
-							<li class="block__item">план потолков с отметками;</li>
-							<li class="block__item">план полов с раскладками материалов;</li>
-							<li class="block__item">план осветительной сети с привязками светильников и выключателей, маркировка групп освещения;</li>
-							<li class="block__item">спецификация осветительных приборов с рисунками приборов;</li>
-							<li class="block__item">план розеточной сети с привязкой розеток и указанием блоков.</li>
-						</ul>
+	<div class="container-fluid">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg bg-light">
+			  <div class="container-xxl">
+				 <a class="navbar-brand" href="index.html"><img src="/img/source/logo.png" alt="" width="130" height="54" class="d-inline-block align-text-top"></a>
+				 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				 </button>
+				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-1 mb-lg-0">
+					  <li class="nav-item">
+						 <a class="nav-link" href="index.html">На главную</a>
+					  </li>
+					  <li class="nav-item">
+						 <a class="nav-link" href="gallery.html">Портфолио</a>
+					  </li>
+					  <li class="nav-item">
+						 <a class="nav-link" href="about.html">Обо мне</a>
+					  </li>
+					</ul>
+				 </div>
+			  </div>
+			</nav>
+	  </header>
+		<main class="main container-fluid">
+				<div class="banner__content col-12 img-fluid"><img src="/img/source/banner.jpg" alt="banner"></div>
+
+				<div class="firtcard mb-3" >
+				<div class="row g-0 align-items-center">
+					<div class="col-md-5 text-center">
+						<img src="/img/source/main4.jpg" class="photo img-fluid mx-auto" alt="...">
 					</div>
-				</div>
-				<div class="design__image">
-					<img src="/img/source/main4.jpg" alt="Картинка">
-				</div>				
-			</div>
-			</section>
-			<section class="spec">
-				<div class="spec__container">
-					<div class="spec__image">
-						<img src="/img/source/main_2.jpg" alt="Картинка">
-					</div>
-					<div class="spec__content">
-						<div class="spec__block block">
-							<div class="block__position">картинки интерьеров по каждой комнате с описанием применяемых материалов;</div>
-							<div class="block__position">чертежи интерьеров по каждой комнате (развертки по стенам с габаритами мебели, указание отделочных материалов на развертках);</div>
-							<div class="block__position">спецификация отделочных материалов (обои, плитка);</div>
-							<div class="block__position">подбор мебели, выбор материалов (предложение по эскизам с сайтов интернет -магазинов, выполняются первоначальные эскизы, при встрече утверждаем выбранные материалы в магазине или другие, выполняю окончательные картинки, выпускаем проект).
+					<div class="col-md-7">
+						<div class="card-body">
+						<h5 class="card-title">Полный комплект дизайн проекта включает в себя:</h5>
+						<p class="card-text">
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+								  <h2 class="accordion-header" id="headingOne">
+									 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										комплект чертежей формата А4:
+									 </button>
+								  </h2>
+								  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									 <div class="accordion-body">
+										<ul class="block__list">
+											<li class="block__item">обмеры с площадями;</li>
+											<li class="block__item">план с расстановкой мебели;</li>
+											<li class="block__item">план перепланировки;</li>
+											<li class="block__item">план потолков с отметками;</li>
+											<li class="block__item">план полов с раскладками материалов;</li>
+											<li class="block__item">план осветительной сети с привязками светильников и выключателей, маркировка групп освещения;</li>
+											<li class="block__item">спецификация осветительных приборов с рисунками приборов;</li>
+											<li class="block__item">план розеточной сети с привязкой розеток и указанием блоков.</li>
+										</ul>									 
+									</div>
+								  </div>
+								</div>
 							</div>
+						</p>
 						</div>
-					</div>					
-				</div>
-			</section>
-			<section class="final">
-				<div class="final__container">
-					<div class="final__content">
-						<p class="final__text">Проект выдается на руки в 2-х экземплярах формата А4 с DVD диском на котором все материалы в ходе выполнения проекта и чертежи выпуска проекта</p>
-						<p class="final__text">Cтоимость полного комплекта <span>10$/м2</span>, аванс <span>30-50%</span>, окончательный расчет при выдаче распечатанного проекта</p>
-						<p class="final__text">Работа при выдаче проекта не прекращается до полного завершения ремонта до установки мебели</p>
 					</div>
-					<div class="final__image">
-						<img src="/img/source/final.jpg" alt="Картинка">
-					</div>				
 				</div>
+				</div>
+
+
+				<div class="secondcard mb-3 align-items-center">
+					<div class="row g-0 align-items-center">
+					  <div class="col-md-6">
+						 <div class="card-body">
+							<div class="spec__block block">
+								<div class="block__position">картинки интерьеров по каждой комнате с описанием применяемых материалов;</div>
+								<div class="block__position">чертежи интерьеров по каждой комнате (развертки по стенам с габаритами мебели, указание отделочных материалов на развертках);</div>
+								<div class="block__position">спецификация отделочных материалов (обои, плитка);</div>
+								<div class="block__position">подбор мебели, выбор материалов (предложение по эскизам с сайтов интернет -магазинов, выполняются первоначальные эскизы, при встрече утверждаем выбранные материалы в магазине или другие, выполняю окончательные картинки, выпускаем проект).
+								</div>
+							</div>
+						 </div>
+					  </div>
+					  <div class="col-md-6">
+						<img src="/img/source/main_2.jpg" class="photo img-fluid" alt="...">
+					 </div>
+					</div>
+				 </div>
+
+
+
+
+				 <div class="thirdcard mb-3">
+					<div class="row g-0 align-items-center">
+					  <div class="col-md-5">
+						 <img src="/img/source/final.jpg" class="photo img-fluid" alt="...">
+					  </div>
+					  <div class="col-md-7">
+						 <div class="finalcard-body">
+							<p class="final__text">Проект выдается на руки в 2-х экземплярах формата А4 с DVD диском на котором все материалы в ходе выполнения проекта и чертежи выпуска проекта</p>
+							<p class="final__text">Cтоимость полного комплекта <span>10$/м2</span>, аванс <span>30-50%</span>, окончательный расчет при выдаче распечатанного проекта</p>
+							<p class="final__text">Работа при выдаче проекта не прекращается до полного завершения ремонта до установки мебели</p>
+						 </div>
+					  </div>
+					</div>
+				 </div>
+
+
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -105,6 +134,19 @@
 				<div class="footer__copyright">Powered by A.D. -2022-</div>
 			</div>
 		</footer>
+		<!-- <footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<ul class="footer__list"><span>Контакты:</span>
+						<li class="footer__tel"><a href="tel:+380958366617">+38(095)8366617</a></li>
+						<li class="footer__tel"><a href="tel:+380988495423">+38(098)8495423</a></li>
+						<li class="footer__mail"><a href="mailto:lelya3112des@mail.ru">lelya3112des@mail.ru</a></li>
+					</ul>					
+				</div>
+				<div class="footer__copyright">Powered by A.D. -2022-</div>
+			</div>
+		</footer> -->
 	</div>	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
