@@ -3,94 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="shortcut icon" href="/img/source/favico.ico" type="image/png">
 	 <link rel="preconnect" href="https://fonts.googleapis.com">
 	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 	 <link rel="preconnect" href="https://fonts.googleapis.com">
 	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	 <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	 <link rel="stylesheet" href="/css/styles.css">
-    <title>Design</title>
+	 <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+	 <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+	 <link rel="stylesheet" href="/css/style.css">
+	 <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+    <title>About</title>
   </head>
   <body>
-	<div class="wrapper">
-		<header id="open" class="header">
-			<div id="close" class="header__container">
-				<a class="header__logo" href=""><img src="/img/source/logo.png" alt="Logo"></a>
-				<div class="header__menu menu">
-					<nav id="menu" class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="index.html" class="menu__link">На главную</a>
-							</li>
-							<li class="menu__item">
-								<a href="projects.html" class="menu__link">Портфолио</a>
-							</li>
-							<li class="menu__item">
-								<a href="about.html" class="menu__link">Обо мне</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__button">
-						<a href="#open" class="icon-menu"><span></span></a>
-						<a href="#close" class="close-icon-menu"></a>
-					</div>					
+	<div class="container-xxl">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg bg-light">
+			  <div class="container-xxl">
+				 <a class="navbar-brand" href="index.html"><img src="/img/source/logo.png" alt="" width="130" height="54" class="d-inline-block align-text-top"></a>
+				 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				 </button>
+				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-1 mb-lg-0">
+					  <li class="nav-item">
+						 <a class="nav-link" href="index.html">На главную</a>
+					  </li>
+					  <li class="nav-item">
+						 <a class="nav-link" href="gallery.html">Портфолио</a>
+					  </li>
+					  <li class="nav-item">
+						 <a class="nav-link  active" href="about.html">Обо мне</a>
+					  </li>
+					</ul>
+				 </div>
+			  </div>
+			</nav>
+	  </header>
+		<main class="main container-fluid align-items-center">
+			<div class="cover-bg p-3 p-lg-4">
+				<div class="row">
+				  <div class="col-lg-4 col-md-5">
+					 <div class="avatar text-center"><img class="rounded mx-auto d-block" src="/img/source/photo1.jpg" width="250"></div>
+				  </div>
+				  <div class="col-lg-8 col-md-7 text-center text-md-start">
+					 <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Ольга Демченко</h2>
+					 <p data-aos="fade-left" data-aos-delay="100">Ведущий архитектор, руководитель проектной группы филиала</p>
+				  </div>
 				</div>
-			</div>
-		</header>
-		<main class="main">
-			<div class="banner__content"><img src="/img/source/banner.jpg" alt="banner"></div>
-			<section class="design">
-			<div class="design__container">
-				<div class="design__content">
-					<div class="design__block block">
-						<div class="block__title">Полный комплект дизайн проекта включает в себя:</div>
-						<div class="block__position">комплект чертежей формата А4:</div>
-						<ul class="block__list">
-							<li class="block__item">обмеры с площадями;</li>
-							<li class="block__item">план с расстановкой мебели;</li>
-							<li class="block__item">план перепланировки;</li>
-							<li class="block__item">план потолков с отметками;</li>
-							<li class="block__item">план полов с раскладками материалов;</li>
-							<li class="block__item">план осветительной сети с привязками светильников и выключателей, маркировка групп освещения;</li>
-							<li class="block__item">спецификация осветительных приборов с рисунками приборов;</li>
-							<li class="block__item">план розеточной сети с привязкой розеток и указанием блоков.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="design__image">
-					<img src="/img/source/main4.jpg" alt="Картинка">
-				</div>				
-			</div>
-			</section>
-			<section class="spec">
-				<div class="spec__container">
-					<div class="spec__image">
-						<img src="/img/source/main_2.jpg" alt="Картинка">
-					</div>
-					<div class="spec__content">
-						<div class="spec__block block">
-							<div class="block__position">картинки интерьеров по каждой комнате с описанием применяемых материалов;</div>
-							<div class="block__position">чертежи интерьеров по каждой комнате (развертки по стенам с габаритами мебели, указание отделочных материалов на развертках);</div>
-							<div class="block__position">спецификация отделочных материалов (обои, плитка);</div>
-							<div class="block__position">подбор мебели, выбор материалов (предложение по эскизам с сайтов интернет -магазинов, выполняются первоначальные эскизы, при встрече утверждаем выбранные материалы в магазине или другие, выполняю окончательные картинки, выпускаем проект).
-							</div>
+			 </div>
+			 <div class="about-section pt-4 px-3 py-3 px-lg-4 mt-1">
+				<div class="row">
+				  <div class="col-md-6">
+					 <h2 class="h3 mb-3">Обо мне</h2>
+					 <p>Руководство проектной группой, курирование объектов строительства, ведение авторского надзора и контакты с заказчиком, подрядчиком непосредственно на объекте и смежными подразделениями.</p>
+					 <p>Разработка жилых и общественных объектов, проектирование, работа над рабочими чертежами. Подсчет объемов материалов по проектным решениям. Непосредственная работа со СНиПами, а также по комплектации чертежей согласно установленным нормам.</p>
+				  </div>
+				  <div class="col-md-5 offset-md-1">
+					 <div class="row mt-2">
+						<div class="col-sm-4">
+						  <div class="pb-2">Age</div>
 						</div>
-					</div>					
+						<div class="col-sm-8">
+						  <div class="pb-1 text-secondary">47</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="pb-2">Lang</div>
+						 </div>
+						 <div class="col-sm-8">
+							<div class="pb-1 text-secondary">Ru, Ua, Eng</div>
+						 </div>
+						<div class="col-sm-4">
+						  <div class="pb-2">Email</div>
+						</div>
+						<div class="col-sm-8">
+						  <div class="pb-1 text-secondary">lelya3112des@mail.ru</div>
+						</div>
+						<div class="col-sm-4">
+						  <div class="pb-2">Phone</div>
+						</div>
+						<div class="col-sm-8">
+						  <div class="pb-1 text-secondary">+380988495423</div>
+						  <div class="pb-1 text-secondary">+380958366617</div>
+						</div>
+					 </div>
+				  </div>
 				</div>
-			</section>
-			<section class="final">
-				<div class="final__container">
-					<div class="final__content">
-						<p class="final__text">Проект выдается на руки в 2-х экземплярах формата А4 с DVD диском на котором все материалы в ходе выполнения проекта и чертежи выпуска проекта</p>
-						<p class="final__text">Cтоимость полного комплекта <span>10$/м2</span>, аванс <span>30-50%</span>, окончательный расчет при выдаче распечатанного проекта</p>
-						<p class="final__text">Работа при выдаче проекта не прекращается до полного завершения ремонта до установки мебели</p>
+			 </div>
+			 <div class="skills-section px-3 py-4 px-lg-4">
+				<h2 class="h3 mb-3">Владение ПК</h2>
+				<div class="row">
+				  <div class="col-md-8">
+					 <div class="mb-2"><span>Revit BIM</span>
+						<div class="progress my-1">
+						  <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">100%</div>
+						</div>
+					 </div>
+					 <div class="mb-2"><span>AutoCAD</span>
+						<div class="progress my-1">
+						  <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">100%</div>
+						</div>
+					 </div>
+					 <div class="mb-2"><span>Adobe Photoshop</span>
+						<div class="progress my-1">
+						  <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
+						</div>
+					 </div>
+				  </div>
+				</div>
+			 </div>
+			 <div class="work-experience-section px-3 px-lg-4">
+				<h2 class="h3 mb-4">Опыт работы</h2>
+				<div class="timeline">
+				  <div class="timeline-card timeline-card-primary card shadow-sm">
+					 <div class="card-body">
+						<div class="h5 mb-1">Руководитель проектной группы <span class="text-muted h6">компания МЕТРОПЛЕКС</span></div>
+						<div class="text-muted text-small mb-2">2016 - в настоящее время</div>
+						<div>ГАП, разработка проектной документации, работа с заказчиками, подрядчиками.</div>
+					 </div>
+				  </div>
+				  <div class="timeline-card timeline-card-primary card shadow-sm">
+					 <div class="card-body">
+						<div class="h5 mb-1">Руководитель проектной группы <span class="text-muted h6"> проектная компания ANDAN</span></div>
+						<div class="text-muted text-small mb-2">2014 - 2016</div>
+						<div>Работа с заказчиками,автономная работа по проектированию зданий, курирование строительства и авторский надзор.</div>
+					 </div>
+				  </div>
+				  <div class="timeline-card timeline-card-primary card shadow-sm">
+					 <div class="card-body">
+						<div class="h5 mb-1">Ведущий архитектор, руководитель проектной группы<span class="text-muted h6"> УкрНИИПрограждансельстрой (Киев)</span></div>
+						<div class="text-muted text-small mb-2">2006 - 2008</div>
+						<div>Курирование строительства и надзор.</div>
+					 </div>
+				  </div>
+				  	<div class="timeline-card timeline-card-primary card shadow-sm">
+					  <div class="card-body">
+						 <div class="h5 mb-1">Ведущий архитектор, руководитель проектной группы филиала<span class="text-muted h6"> Проектная компания "Фишер – Архитекторы и инженеры"</span></div>
+						 <div class="text-muted text-small mb-2">2006 - </div>
+						 <div>Курирование строительства и надзор.</div>
+					  </div>
 					</div>
-					<div class="final__image">
-						<img src="/img/source/final.jpg" alt="Картинка">
-					</div>				
+					<div class="timelene__expirience py-3">
+						<ul class="timeline__title h5 mb-1 ">Непосредственные разработки:
+							<li class="text-muted h6 pt-3">Разработка рабочей документации детского сада в г. Сумы;</li>
+							<li class="text-muted h6">разработка эскизных и рабочих проектов жилых комплексов в г.Киев; </li>
+							<li class="text-muted h6">идея и разработка проектов торговых, жилых и общественных зданий, коттеджей;</li>
+							<li class="text-muted h6">индивидуальный дизайн интерьеров и визуализация квартир, коттеджей, общественных и торговых помещений;</li>
+							<li class="text-muted h6">индивидуальная разработка рабочего проекта коттеджа от эскиза до рабочих чертежей и генплана;</li>
+							<li class="text-muted h6">идея и разработка музея олимпийских видов спорта на НСК "Олимпийский".</li>
+						</ul>
+					</div>
+					<div class="timeline-card timeline-card-primary card shadow-sm">
+						<div class="card-body">
+						  <div class="h5 mb-1">Инженер по надзору ремонтно-строительных работ<span class="text-muted h6"> Проектно-сметное бюро отдела капитального строительства "Харьковкомуночиствод"</span></div>
+						  <div class="text-muted text-small mb-2">2004 - 2006</div>
+						</div>
+					 </div>
+				  	<div class="timeline-card timeline-card-primary card shadow-sm">
+					  <div class="card-body">
+						 <div class="h5 mb-1">Инженер- конструктор, руководитель группы<span class="text-muted h6"> Конструкторское бюро отдела капитального строительства "Харьковского тракторного завода"</span></div>
+						 <div class="text-muted text-small mb-2">2004 - 1994</div>
+					  </div>
+					</div>
+					
 				</div>
+			 </div>
+			 <div class="page-break"></div>
+			 <div class="education-section px-3 px-lg-4 pb-4">
+				<h2 class="h3 mb-3 mt-4">Образование</h2>
+				<div class="timeline">
+				  <div class="timeline-card timeline-card-success card shadow-sm">
+					 <div class="card-body">
+						<div class="h5 mb-1">Инженер-строитель<span class="text-muted h6"> Харьковский национальный университет городского хозяйства</span></div>
+						<div class="text-muted text-small mb-2">2000 - 2004</div>
+						<div>Городское строительство и хозяйство</div>
+					 </div>
+				  </div>
+				  <div class="timeline-card timeline-card-success card shadow-sm">
+					 <div class="card-body">
+						<div class="h5 mb-1">Техник – архитектор <span class="text-muted h6">Харьковский колледж строительства, архитектуры и дизайна</span></div>
+						<div class="text-muted text-small mb-2">1990 - 1994</div>
+						<div>Архитектура зданий и сооружений.</div>
+					 </div>
+				  </div>
+				</div>
+			 </div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -105,5 +211,8 @@
 			</div>
 		</footer>
 	</div>	
-  </body>
+	<script src="js/aos.js?ver=1.2.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="js/main.js?ver=1.2.0"></script>
+</body>
 </html>
